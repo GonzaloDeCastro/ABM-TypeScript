@@ -1,13 +1,24 @@
 import React, { useState } from "react";
 
 type FormElement = React.FormEvent<HTMLFormElement>;
+interface ITask {
+  name: string;
+  done: boolean;
+}
 
 function App(): JSX.Element {
-  const [newTask, setNewTask] = useState("");
+  const [newTask, setNewTask] = useState<string>("");
+  const [tasks, setTasks] = useState<ITask[]>([]);
 
   const handleSubmit = (e: FormElement) => {
     e.preventDefault();
-    console.log("enviando");
+    addTask(newTask);
+    console.log(tasks);
+  };
+
+  const addTask = (name: string) => {
+    const newTasks: ITask[] = [...tasks, { name, done: false }];
+    setTasks(newTasks);
   };
 
   return (
