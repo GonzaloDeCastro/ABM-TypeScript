@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ABM-TypeScript/static/css/main.f4efcd13.css",
+    "main.js": "/ABM-TypeScript/static/js/main.c1fb41d2.js",
+    "index.html": "/ABM-TypeScript/index.html",
+    "main.f4efcd13.css.map": "/ABM-TypeScript/static/css/main.f4efcd13.css.map",
+    "main.c1fb41d2.js.map": "/ABM-TypeScript/static/js/main.c1fb41d2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f4efcd13.css",
+    "static/js/main.c1fb41d2.js"
+  ]
+}
