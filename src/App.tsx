@@ -13,7 +13,7 @@ function App(): JSX.Element {
   const handleSubmit = (e: FormElement) => {
     e.preventDefault();
     addTask(newTask);
-    console.log(tasks);
+    setNewTask("");
   };
 
   const addTask = (name: string) => {
@@ -25,9 +25,18 @@ function App(): JSX.Element {
     <>
       <form onSubmit={handleSubmit}>
         {" "}
-        <input type="text" onChange={(e) => setNewTask(e.target.value)} />
+        <input
+          type="text"
+          onChange={(e) => setNewTask(e.target.value)}
+          value={newTask}
+        />
         <button>Save</button>
       </form>
+      {tasks.map((t: ITask, i: number) => (
+        <div key={i}>
+          <h2>{t.name}</h2>
+        </div>
+      ))}
     </>
   );
 }
