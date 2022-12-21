@@ -6,7 +6,7 @@ interface ITask {
   done: boolean;
 }
 
-function App(): JSX.Element {
+const App = (): JSX.Element => {
   const [newTask, setNewTask] = useState<string>("");
   const [tasks, setTasks] = useState<ITask[]>([]);
   const taskInput = useRef<HTMLInputElement>(null);
@@ -28,6 +28,8 @@ function App(): JSX.Element {
     newTasks[i].done = !newTasks[i].done;
     setTasks(newTasks);
   };
+
+  /** linea nueva de branch principal */
 
   const deleteTask = (i: number): void => {
     /*     const newTasks: ITask[] = tasks.filter((t: ITask) => t[i] != i); */
@@ -81,6 +83,6 @@ function App(): JSX.Element {
       </div>
     </div>
   );
-}
+};
 
 export default App;
