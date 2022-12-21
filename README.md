@@ -39,7 +39,7 @@ We start the server with the command "npm start"
 
 ```
 
-6. Try my App click [Here](https://https://gonzalodecastro.github.io/ABM-TypeScript)
+6. Try my App click [Here](https://gonzalodecastro.github.io/ABM-TypeScript)
 
 ### Work by
 
