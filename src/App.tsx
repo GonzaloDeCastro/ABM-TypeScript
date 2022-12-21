@@ -29,10 +29,6 @@ const App = (): JSX.Element => {
     setTasks(newTasks);
   };
 
-  /** linea nueva de branch principal  */
-  
-  /** linea nueva de branch principal  2*/
-
   const deleteTask = (i: number): void => {
     /*     const newTasks: ITask[] = tasks.filter((t: ITask) => t[i] != i); */
     const newTasks: ITask[] = [...tasks];
