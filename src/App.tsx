@@ -30,7 +30,6 @@ const App = (): JSX.Element => {
   };
 
   const deleteTask = (i: number): void => {
-    /*     const newTasks: ITask[] = tasks.filter((t: ITask) => t[i] != i); */
     const newTasks: ITask[] = [...tasks];
     newTasks.splice(i, 1);
     setTasks(newTasks);
